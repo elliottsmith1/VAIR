@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Runway2
+  - Runway3
+  - Runway1
+  - Runway
+  - Plane
   layers:
   - Default
   - TransparentFX

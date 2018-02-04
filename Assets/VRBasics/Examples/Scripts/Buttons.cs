@@ -80,12 +80,16 @@ public class Buttons : VRBasics_Touchable {
 			}
 
 
-			if (hinge.percentage < 0.5f && pushed && !isOn) {
+            if (hinge)
+            {
+                if (hinge.percentage < 0.5f && pushed && !isOn)
+                {
 
-				isOn = true;
+                    isOn = true;
 
-				SetIsTouchable (true);
-			}
+                    SetIsTouchable(true);
+                }
+            }
 
 
 			if (isTouched && isOn) {
@@ -99,12 +103,16 @@ public class Buttons : VRBasics_Touchable {
 				pushed = false;
 			}
 
-			if (hinge.percentage > 0.5f && !pushed && isOn) {
+            if (hinge)
+            {
+                if (hinge.percentage > 0.5f && !pushed && isOn)
+                {
 
-				isOn = false;
+                    isOn = false;
 
-				SetIsTouchable (true);
-			}
+                    SetIsTouchable(true);
+                }
+            }
 
 			break;
 		}
